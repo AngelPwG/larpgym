@@ -6,3 +6,12 @@
 *.token
 .env
 __pycache__/
+client.toml
+!examples/client.toml
+token
+token.*
+*.token.*
+server.env
+!examples/server.env
+/secrets/
+.env.*
