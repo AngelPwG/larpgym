@@ -1,0 +1,25 @@
+[package]
+name = "gym-server"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gym-core.workspace = true
+gym-storage.workspace = true
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+axum.workspace = true
+tokio.workspace = true
+subtle.workspace = true
+sha2.workspace = true
+rusqlite.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+gym-sync.workspace = true
+reqwest.workspace = true
+uuid.workspace = true
+chrono.workspace = true

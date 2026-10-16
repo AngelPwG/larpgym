@@ -1,0 +1,7 @@
+# Todos los campos son opcionales. No guardes aquí el token.
+timezone = "America/Mazatlan"
+sync_interval_secs = 60
+# database = "/ruta/absoluta/client.sqlite"
+# URL raíz del backend: dirección privada de Tailscale o URL HTTPS de Funnel.
+# server_url = "https://REEMPLAZAR-CON-TU-URL"
+# token_file = "/ruta/absoluta/al/token"

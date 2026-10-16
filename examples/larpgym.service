@@ -1,0 +1,28 @@
+[Unit]
+Description=LarpGym API v1
+After=network.target
+
+[Service]
+Type=simple
+User=larpgym
+Group=larpgym
+ExecStart=/usr/local/bin/gym-server
+EnvironmentFile=/etc/larpgym/server.env
+Environment=GYM_TOKEN_FILE=%d/gym-token
+LoadCredential=gym-token:/etc/larpgym/token
+StateDirectory=larpgym
+StateDirectoryMode=0700
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target
